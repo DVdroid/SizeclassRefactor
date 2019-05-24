@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DetailView" customModule="VASizeClassRefactor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="433"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeM-eM-QMC">
+                    <rect key="frame" x="0.0" y="0.0" width="331" height="433"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="331" placeholderIntrinsicHeight="433" translatesAutoresizingMaskIntoConstraints="NO" id="Biy-dn-oeB">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="433"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6t-2H-6Ch">
+                                    <rect key="frame" x="10" y="50" width="311" height="307"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regular:W Regular:H" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwh-vJ-0sY">
+                                    <rect key="frame" x="10" y="407" width="311" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Nwh-vJ-0sY" firstAttribute="leading" secondItem="Biy-dn-oeB" secondAttribute="leading" constant="10" id="8Nu-uV-zZ8"/>
+                                <constraint firstAttribute="bottom" secondItem="B6t-2H-6Ch" secondAttribute="bottom" id="Dl9-vi-WXX">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                </constraint>
+                                <constraint firstItem="B6t-2H-6Ch" firstAttribute="top" secondItem="Biy-dn-oeB" secondAttribute="top" id="FjJ-zg-Eif">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                </constraint>
+                                <constraint firstItem="B6t-2H-6Ch" firstAttribute="leading" secondItem="Biy-dn-oeB" secondAttribute="leading" constant="10" id="ILe-GV-jy0"/>
+                                <constraint firstItem="Nwh-vJ-0sY" firstAttribute="top" secondItem="B6t-2H-6Ch" secondAttribute="bottom" constant="50" id="Y3S-S6-W9f"/>
+                                <constraint firstAttribute="trailing" secondItem="B6t-2H-6Ch" secondAttribute="trailing" constant="10" id="YFE-RM-ANN"/>
+                                <constraint firstAttribute="bottom" secondItem="Nwh-vJ-0sY" secondAttribute="bottom" constant="5" id="Z4L-Co-evS"/>
+                                <constraint firstAttribute="trailing" secondItem="Nwh-vJ-0sY" secondAttribute="trailing" constant="10" id="wdf-Y4-zs4"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="subviews">
+                                    <exclude reference="Nwh-vJ-0sY"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <exclude reference="8Nu-uV-zZ8"/>
+                                    <exclude reference="Y3S-S6-W9f"/>
+                                    <exclude reference="Z4L-Co-evS"/>
+                                    <exclude reference="wdf-Y4-zs4"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <mask key="subviews">
+                                    <include reference="Nwh-vJ-0sY"/>
+                                </mask>
+                                <mask key="constraints">
+                                    <exclude reference="Dl9-vi-WXX"/>
+                                    <include reference="8Nu-uV-zZ8"/>
+                                    <include reference="Y3S-S6-W9f"/>
+                                    <include reference="Z4L-Co-evS"/>
+                                    <include reference="wdf-Y4-zs4"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Biy-dn-oeB" secondAttribute="trailing" id="2t1-EG-NEE"/>
+                        <constraint firstItem="Biy-dn-oeB" firstAttribute="top" secondItem="zeM-eM-QMC" secondAttribute="top" id="7h6-Ti-cJy"/>
+                        <constraint firstAttribute="bottom" secondItem="Biy-dn-oeB" secondAttribute="bottom" id="YHl-bo-fuC"/>
+                        <constraint firstItem="Biy-dn-oeB" firstAttribute="leading" secondItem="zeM-eM-QMC" secondAttribute="leading" id="Yfq-dk-Bql"/>
+                        <constraint firstItem="Biy-dn-oeB" firstAttribute="height" secondItem="zeM-eM-QMC" secondAttribute="height" priority="250" id="ckj-Pq-WmT"/>
+                        <constraint firstItem="Biy-dn-oeB" firstAttribute="width" secondItem="zeM-eM-QMC" secondAttribute="width" id="dOv-om-AlK"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zeM-eM-QMC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="K4d-th-9hh"/>
+                <constraint firstItem="zeM-eM-QMC" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="foc-1f-JBh"/>
+                <constraint firstAttribute="bottom" secondItem="zeM-eM-QMC" secondAttribute="bottom" id="h3c-fM-ECG"/>
+                <constraint firstItem="zeM-eM-QMC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rdq-k9-KS3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="aLabel" destination="B6t-2H-6Ch" id="JxT-0y-FZk"/>
+            </connections>
+            <point key="canvasLocation" x="42.753623188405797" y="-19.754464285714285"/>
+        </view>
+    </objects>
+</document>
