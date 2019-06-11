@@ -3,7 +3,7 @@
 //  VASizeClassRefactor
 //
 //  Created by Vikash Anand on 21/05/19.
-//  Copyright © 2019 TIAA. All rights reserved.
+//  Copyright © 2019 VA. All rights reserved.
 //
 
 import UIKit

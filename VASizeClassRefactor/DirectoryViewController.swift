@@ -2,8 +2,8 @@
 //  DirectoryViewController.swift
 //  VASizeClassRefactor
 //
-//  Created by TIAA on 20/05/19.
-//  Copyright © 2019 TIAA. All rights reserved.
+//  Created by Vikash Anand on 20/05/19.
+//  Copyright © 2019 VA. All rights reserved.
 //
 
 import UIKit
